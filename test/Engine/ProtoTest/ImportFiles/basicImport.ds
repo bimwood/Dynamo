@@ -19,7 +19,7 @@ def Scale (arr : double[], scalingFactor : double)
 
 def MidValue : double[](p : DummyPoint)
 {
-	return = [p.X/2, p.Y/2, p.Z/2];
+	return = {p.X/2, p.Y/2, p.Z/2};
 }
 
 def Count(inputArray : double[])
@@ -53,6 +53,11 @@ class Point
 		Y = y;
 		Z = z;
     }
+	
+	def MidValue : double[]()
+	{
+		return = {X/2, Y/2, Z/2};
+	}
 }
 
 class Line
